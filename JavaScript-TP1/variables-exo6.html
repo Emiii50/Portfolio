@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+      let chansons = [];
+      chansons.push("numb"); //Ajouter un élément
+      chansons.push("in the end");
+      chansons.push("castle of glass");
+      chansons.push("burn it down");
+
+      console.log("Chansons", chansons);
+
+      let chanson1 = {
+        titre: "numb",
+        auteur: "Linkin Park",
+        annee: 2001,
+        style: "Rock"
+      };
+
+      let chanson2 = {
+        titre: "in the end",
+        auteur: "Linkin Park",
+        annee: 2004,
+        style: "Rock"
+      };
+
+      let chanson3 = {
+        titre: "castle of glass",
+        auteur: "Linkin Park",
+        annee: 2008,
+        style: "Rock"
+      };
+
+      let chanson4 = {
+        titre: "burn it down",
+        auteur: "Linkin Park",
+        annee: 2010,
+        style: "Rock"
+      };
+
+      let chanson=[chanson1,chanson2,chanson3,chanson4];
+      console.log("Chansons" , chanson);
+
+      var nombre = Math.floor(Math.random() * chanson.length);
+      console.log("Une chanson :", chanson[nombre]);
+
+      console.log("Chansons:", chanson);
+  </script>
+</body>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //Code Javascript
+
+    //pour une fête, j'ai acheté 3 packs de 25 bières chacun
+    let nombrePack=3;
+    let nombreBiereParPack=25;
+    //j'ai payé 3 euros
+    let prixTotal=34;
+    //il y a 12 invités (moi compris)
+    let nombreInvite=12;
+
+    //nombre de bieres entières que va boire en moyenne chaque personne, arrondi en-dessous
+    let nombreBiereParPersonne=(nombrePack*nombreBiereParPack)/nombreInvite;
+    console.log("Nombre de bières par personnes:",Math.floor(nombreBiereParPersonne));
+
+    //participation financiere en arrondissant au-dessous
+    let participation=prixTotal/nombreInvite;
+    console.log("Participation financiere:",Math.ceil(participation));
+
+  </script>
+</body>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+      let heure=Math.ceil(Math.random()*24); //une heure dans la journée entre 1 et 24
+      console.log("Une heure de la journée :",heure);
+
+      let jour=Math.ceil(Math.random()*31); //un jour dans le mois au hasard entre 1 et 31
+      console.log("Un jour du mois :",Math.ceil(Math.random()*31));
+
+      let mois=Math.ceil(Math.random()*12); //un numéro de mois au hasard entre 1 et 12
+      console.log("Un numéro du mois :",Math.ceil(Math.random()*12));
+
+      let phrase="il est " + heure + "h " + "nous sommes le " + jour + "/" + mois;
+      console.log(phrase);
+
+      phrase=phrase.replace("il est ", "il est exactement ");
+      console.log(phrase);
+
+      phrase=phrase.charAt(4);
+      console.log("5e caractère : ",phrase);
+
+  </script>
+</body>
