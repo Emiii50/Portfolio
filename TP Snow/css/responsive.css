@@ -1,0 +1,73 @@
+/*responsive*/
+/*point de rupture : 1280px (ecran desktop)*/
+/*point de rupture : 1024px (tablette paysage)*/
+/*point de rupture : 768px (tablette portrait + smartphone paysage)*/
+/*point de rupture : 480px (smartphone portrait)*/
+
+@media screen and (max-width:1024px){
+	body{
+		font-size:1.1rem;
+	}
+	#header{
+		justify-content:center;
+		padding:15px 5%;	
+	}
+	#logo{
+		padding:0;
+		margin-bottom:15px;
+	}
+	#menu_haut{
+		width:100%;
+	}
+	#menu_haut ul{
+		justify-content:center;
+	}
+	#temoignage{
+    padding:9vw 10%;
+    min-height: 50vh;
+	}
+	#temoignage h1{
+	margin-bottom:15px;
+	text-align:center;
+	}
+	#temoignage{
+    padding:6vw 0 0;
+	}	
+	#temoignage p {
+	background:linear-gradient(transparent,rgba(0,0,0,1),transparent);
+	padding:20px 3%;	
+	}
+}
+
+@media screen and (max-width:768px){
+	#gallery figure {
+    width: 48%;
+	}
+	#gallery .crop {
+		height:18vw;
+	}	
+}
+
+@media screen and (max-width:500px){
+	#slider{
+	background-image:url("../images/slide_min.jpg");
+	height:40vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	}	
+	#slider h1 {
+    font-size:2.3rem;
+    position:static;/*permet de sortir du position:absolute*/
+	text-align:center;
+	}	
+	#gallery figure {
+    width:100%;
+	}
+	#gallery .crop {
+	height:35vw;
+	}	
+	#footer{
+	font-size:0.8rem;
+	}
+}

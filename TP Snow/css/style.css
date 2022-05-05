@@ -1,0 +1,171 @@
+*{
+	padding:0;/*marge interne*/
+	margin:0;/*marge externe*/
+	box-sizing:border-box;/*le padding et les bordures sont inclus dans la largeur des balises*/
+}
+
+body{
+	font-family:arial,sans-serif;
+}
+
+.fermer{
+	font-weight:bold;
+	font-size:1.5rem;
+	text-align:center;
+	padding:15px 0 30px;
+}
+
+.fermer:hover{
+	color:red;
+	transform:scale(1.5);
+	transition:transform 0.3s;
+}
+
+/* ma première regle de style */
+/*#header s'appelle : le selecteur*/
+#header{
+	min-height:60px;/*hauteur*/
+	background:#000;/*arrière plan*/
+	padding:5px 5%;
+	display:flex;
+	align-items:center;/*alignement vertical*/
+	flex-wrap:wrap;
+}
+
+#menu_haut ul{
+	display:flex;
+	list-style-type:none;
+	font-size:0.9rem;
+}
+
+#menu_haut li{
+	color:#fff;
+	padding:5px 12px;	
+}
+
+#menu_haut a{
+	color:inherit;/*permet d'hériter de la color de la balise parent (<li>)*/
+	text-decoration:none;
+}
+
+#logo{
+	padding-right:30px;
+}
+
+/**************************************/
+
+#slider{
+	height:calc(100vh - 60px);
+	background:url("../images/snowboard-1.jpg") no-repeat right center #a1a1a1;
+	background-size:cover;
+	color:#fff;
+	position:relative;/*permet de positionner les balises enfants en absolute*/
+}
+
+#slider h1{
+	font-size:3rem;
+	font-family: 'Roboto', sans-serif;
+	position:absolute;
+	z-index:10;
+	top:41%;
+	left:29%;/*coordonnées x*/
+}
+
+/***************************************************/
+#carrousel{
+	text-align:center;
+	padding:5vw 0;
+}
+
+#carrousel p{
+	padding:15px 0 0;
+}
+
+#carrousel img{
+	width:100%;
+	padding:30px 0 15px;
+}
+
+/*last-of-type est une pseudo-classe et permet
+dans le cas ci-dessous de s'adresse à la derniere balise <p>
+de la section id=carrousel nth-of-type(2)*/
+#carrousel p:last-of-type{
+	text-transform:uppercase;
+	font-size:0.9rem;
+}
+
+/**********************************************************/
+#temoignage{
+	background:url("../images/vetements-snowboard.jpg") no-repeat right center #a1a1a1;
+	background-size:cover;
+	padding:9vw 50% 9vw 10%;
+	color:#fff;
+	min-height:100vh;/*hauteur minimum*/
+}
+
+#temoignage p{
+	padding:20px 0;
+	line-height:1.5rem;/*interligne*/
+}
+
+#temoignage sup{
+	font-size:0.75rem;
+}
+
+/************************************************/
+#gallery{
+	text-align:center;
+	padding:6vw 10%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+#gallery h1,
+#gallery .fermer{
+	width:100%;
+}
+
+#gallery figure{
+	width:23%;
+	text-align:left;
+}
+
+#gallery .crop{
+	height:12vw;
+	overflow:hidden;
+}
+
+#gallery img{
+	width:100%;
+}
+
+#gallery figcaption{
+	padding:8px 0;
+}
+
+/******************************************/
+#footer{
+	padding:5vw 10%;
+	background-color:#000;
+	color:#fff;
+	display:flex;
+	justify-content:space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
