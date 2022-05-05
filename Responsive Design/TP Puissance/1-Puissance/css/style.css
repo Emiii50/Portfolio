@@ -1,0 +1,227 @@
+:root {
+    --bleu: #173259;
+    --jaune: #CF9D34;
+    --noir: #010314;
+    --blanc: #fff;
+    --gris-clair: #eee;
+    --gris-fonce: #ccc;
+}
+@font-face {
+    font-family: "Hardcore";
+    src: url("../fonts/Hardcore.otf");
+}
+@font-face {
+    font-family: "Rubellion";
+    src: url("../fonts/Rubellion\ Script\ Free.ttf");
+}
+body{
+    margin: 0;
+    font-family: Helvetica;
+}
+
+/*************************
+        header
+**************************/
+
+img.logo{
+    width: 200px;
+}
+.header-left{
+    padding: 50px 0 50px 150px;
+    background-color: var(--bleu);
+    width: 65%;
+}
+h1{
+    font-size: 100px;
+    font-family: "Hardcore";
+    color: #fff;
+}
+h2{
+    font-size: 40px;
+    font-family: "Rubellion";
+    color: #fff;
+}
+nav{
+    float: right;
+    text-align: right;
+    padding: 20px;
+}
+nav ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+nav ul li a{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--bleu);
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: var(--jaune);
+}
+/*************************
+        container
+**************************/
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*************************
+        img
+**************************/
+header{
+    position: relative;
+}
+img.image1, img.image2{
+    position: absolute;
+}
+img.image1 {
+	top: 245px;
+	right: 100px;
+	z-index: 1;
+	width: 400px;
+}
+img.image2 {
+	top: 450px;
+	right: 400px;
+	z-index: 2;
+	width: 350px;
+}
+/*************************
+        textes
+**************************/
+section{
+    padding: 100px 0;
+}
+section#services{
+    padding-top: 200px;
+}
+h3{
+    color: var(--jaune);
+    margin-top: 0;
+    font-size: 25px;
+}
+.image, .texte{
+    float: left;
+    width: 50%;
+}
+.image img{
+    width: 90%;
+}
+section#services .image, section#produits .image{
+    float: left;
+    text-align: left;
+}
+section#quisommesnous .image{
+    float: right;
+    text-align: right;
+}
+.saut{
+    clear: both; /* retour à la ligne */
+}
+section#quisommesnous, section#boutique{
+    background: var(--gris-clair);
+}
+/*************************
+        contact
+**************************/
+section#contact{
+    text-align: center;
+    background: url('../images/coureur.jpg') no-repeat center / cover;
+    height: 150px;
+    padding: 150px 0;
+}
+section#contact h3{
+    color: var(--blanc);
+    padding-bottom: 20px;
+}
+section#contact a{
+    color: var(--blanc);
+    border: solid 2px var(--blanc);
+    border-radius: 20px;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 1s;
+}
+section#contact a:hover{
+    background-color: var(--blanc);
+    color: var(--bleu);
+}
+/*************************
+        footer
+**************************/
+footer{
+    clear: both;
+    color: var(--blanc);
+    background-color: var(--noir);
+    height: 265px;
+    padding: 85px 0;
+    font-size: 15px;
+    margin: 0;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+    transition: 2s all;
+}
+footer img:hover{
+    width: 70px;
+    height: 70px;
+}
+footer .footer-elem{
+    width: 50%;
+    float: left;
+}
+/*************************
+        boutique
+**************************/
+
+.produit{
+/*
+    float: left;
+*/
+    margin: 15px;
+    width: 230px;
+    text-align: center;
+    border: solid 1px var(--gris-fonce);
+    padding: 15px;
+    background: var(--blanc);
+}
+.produit img{
+    width: 200px;
+}
+.produit a{
+    color: var(--jaune);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 1s all;
+}
+.produit a:hover{
+    color: var(--bleu);
+    text-decoration: underline;
+}
+.liste-produit{
+    display: flex; /* mode flex activé */
+    flex-wrap: wrap; /* retour à la ligne */
+    justify-content: flex-start; /* espacement */
+    flex-wrap: wrap; /* retour à la ligne */
+}
+
+/*************************
+        garanties
+**************************/
+.liste-garanties img{
+    width: 100px;
+}
+.liste-garanties div{
+    text-align: center;
+    width: 250px;
+    background: var(--gris-clair);
+    padding: 15px;
+}
+.liste-garanties{
+    display: flex; /* mode flex activé */
+    justify-content: space-around;
+}

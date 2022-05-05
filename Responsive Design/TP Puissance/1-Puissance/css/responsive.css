@@ -1,0 +1,80 @@
+/*************************
+        responsive
+**************************/
+@media screen and (max-width: 768px) {
+    /*************************
+        header
+    **************************/
+    .header-left{
+        width: 100%; /* header pleine page */
+        text-align: center; /* texte centre */
+        padding: 0 0 20px 0; /* enlever marges sur les coté, en ajouter en bas */
+    }
+    nav ul li a{
+        color: var(--blanc); /* menu blanc */
+        font-size: 16px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    /*************************
+            container
+    **************************/
+    .container{
+        width: 90%; /* container à 90% de large */
+    }
+    /*************************
+            img
+    **************************/
+    img.image1{
+        position: relative; /* on passe l'image sous le titre */
+        width: 100%; /* largeur 100% */
+        top: auto;
+        right: auto;
+    }
+    img.image2{
+        display: none; /* masquer la deuxième image */
+    }
+    /*************************
+            textes
+    **************************/
+    section#services{
+        padding-top: 20px;
+    }
+    section{
+        padding: 15px 0; /* reduction de la marge */
+    }
+    .image, .texte{
+        float: none; /* textes et images à 100% de large */
+        width: 100%;
+    }
+    .image img{
+        width: 100%;
+    }
+    section#services .image, section#produits .image, section#quisommesnous .image{
+        float: none;
+        text-align: center;
+    }
+    iframe{
+        width: 100%;
+    }
+    /*************************
+            produits
+    **************************/
+    .liste-produit{
+        justify-content: center;
+    }
+    /*************************
+            footer
+    **************************/
+    footer{
+        height: auto;
+    }
+    footer .footer-elem{
+        width: 100%;
+        float: none;
+    }
+}

@@ -1,0 +1,33 @@
+body{
+    background: #11181E;
+}
+header{
+	background: #FECC00; /*arriere plan*/
+}
+a{
+    color: #000;
+}
+
+.contenu-principal{
+    background: #fff;
+}
+
+.bloc-contenu{
+    padding: 20px;
+}
+
+.vignettes-liste{
+    width: 85%;
+    margin: 40px auto;
+}
+
+footer{
+	height:80px;
+	background:#6c757d;
+	text-align: center;
+	padding: 30px 0;
+}
+footer img{
+	height: 30px;
+	margin-left: 10px;
+}
