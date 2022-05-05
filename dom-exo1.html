@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+ <h1>Ma boutique</h1>
+ <div class="contenu">
+ <div class="bloc" id="bloc1">Produit 1</div>
+ <div class="bloc" id="bloc2">Produit 2</div>
+ <div class="bloc" id="bloc3">Produit 3</div>
+ </div>
+
+ <script>
+// Code Javascript
+
+    let titre = document.getElementsByTagName("h1");
+    console.log("Titre : ", titre);
+
+    let contenu = document.getElementsByClassName("contenu");
+    console.log("Contenu : ", contenu);
+
+    let blocs = document.getElementsByClassName("bloc");
+    console.log("Bloc : ", blocs);
+
+    let bloc1 = document.getElementById("bloc1");
+    console.log("bloc : ", bloc1);
+
+    console.log("Troisième Bloc : ", blocs[2]);
+
+    contenu = document.querySelector('.contenu');
+    console.log('contenu', contenu);
+
+    bloc = document.querySelector('.bloc');
+    console.log('bloc', bloc);
+
+    bloc = document.querySelectorAll('.bloc');
+    console.log('blocs', blocs);
+
+ </script>
+ </body>

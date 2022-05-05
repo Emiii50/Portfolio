@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+ <h1>Mon image</h1>
+ <img id="image1" src="polo-bleu.jpg" width="300">
+  <input id="bouton1" type="button" value="NOIR">
+
+
+ <script>
+ // Code Javascript
+
+  let polo = document.getElementById("image1");
+  console.log("Image 1 : ", polo);
+
+  polo.setAttribute("src", "polo-rouge.jpg");
+
+  polo.setAttribute("src", "polo-orange.jpg");
+
+  polo.setAttribute("src", "polo-gris.jpg");
+
+  polo.style.border = "black 1px solid";
+
+ </script>
+</body>
